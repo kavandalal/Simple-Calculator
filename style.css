@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(147, 200, 250);
+    height: 100vh;
+}
+/* .enableBlur{
+    filter: blur(2px);
+} */
+#cont{
+    height: 100%;
+    background-image:linear-gradient(rgba(104, 0, 61, 0.7),rgba(0, 35, 99, 0.3)), url(bg.jpg);
+    position:static;
+    padding:30px;
+}
+
+
+/* .disableBlur{
+    filter: blur(0);
+} */
+
+#layout{
+    height:550px;
+    width: 400px;
+    background: white;
+    opacity: 1;
+    /* border: 4px solid black; */
+    border-radius: 30px;
+    margin: 0 auto;
+    top : 20px;
+    position : relative;
+    box-shadow: 0 10px 50px  ;
+    display: flex;
+    flex-direction:column;
+    padding : 0 10px 20px;
+}
+
+#display{
+    height:150px;
+    width: 100%;
+    position: relative;    
+    padding: 35px 15px 0 ;
+    
+}
+
+#history{
+    float : right;
+    text-align: right;
+    clear:both;
+    display: block;
+    width:100%;
+    height: 28px;
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+}
+
+#output{
+    float : right;
+    text-align: right;
+    clear:both;
+    display: block;
+    width: 100%;
+    height: 56px;
+    font-size: 44px;
+    color:rgb(189, 9, 9);
+    border: 3px solid black;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+#input{
+    display: grid;
+    grid-template-areas: 
+        "clr div mul back"
+        "num1 num2 num3 add"
+        "num4 num5 num6 sub"
+        "num7 num8 num9  eq"
+        "num0 num0 num0 eq" ;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    gap:8px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+button{
+    border-radius: 35px;
+    font-size: 26px;
+    /* background-color: rgb(189, 36, 9); */
+    background-color: rgb(51, 51, 51);
+    border:4px solid black;
+    color:white;
+}
+button:hover{
+    background-color: rgba(0,0,0,0.2) !important;
+    color:black !important;
+}
+.num .op{
+    cursor: pointer;
+}
+#clr{
+    grid-area: clr;
+    background-color: rgb(189, 36, 9);
+}
+#div{
+    grid-area: div;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight:bold;
+}
+#mul{
+    grid-area: mul;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight:bold;
+}
+#back{
+    grid-area: back;
+    background-color: rgb(189, 36, 9);
+}
+#num1{
+    grid-area: num1;
+}
+#num2{
+    grid-area: num2;
+}
+#num3{
+    grid-area: num3;
+}
+#add{
+    grid-area: add;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight:bold;
+}
+#num4{
+    grid-area: num4;
+}
+#num5{
+    grid-area: num5;
+}
+#num6{
+    grid-area: num6;
+}
+#sub{
+    grid-area: sub;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight:bold;
+}
+#num7{
+    grid-area: num7;
+}
+#num8{
+    grid-area: num8;
+}
+#num9{
+    grid-area: num9;
+}
+#num0{
+    grid-area: num0;
+}
+#eq{
+    grid-area: eq;
+    background-color: rgb(189, 36, 9);
+}
