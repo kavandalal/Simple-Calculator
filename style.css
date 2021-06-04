@@ -8,20 +8,13 @@ body{
     background-color: rgb(147, 200, 250);
     height: 100vh;
 }
-/* .enableBlur{
-    filter: blur(2px);
-} */
+
 #cont{
     height: 100%;
     background-image:linear-gradient(rgba(104, 0, 61, 0.7),rgba(0, 35, 99, 0.3)), url(bg.jpg);
     position:static;
     padding:30px;
 }
-
-
-/* .disableBlur{
-    filter: blur(0);
-} */
 
 #layout{
     height:550px;
